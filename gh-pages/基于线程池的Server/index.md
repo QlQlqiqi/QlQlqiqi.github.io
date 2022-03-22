@@ -1,5 +1,11 @@
 # 第二次作业
 
+| 学号        | 姓名   | 班级           |
+| ----------- | ------ | -------------- |
+| 19030100358 | 吴起龙 | 周一上午1、2节 |
+
+
+
 ## 要求：
 
 ![要求](https://s2.loli.net/2022/03/22/ouV8XEStgw3rMdU.jpg)
@@ -37,12 +43,4 @@ note：
 
 
 
-> 代码如下
-
-[Server.java](./code/Server.java)
-
-[Client.java](./code/Client.java)
-
-[MyTask.java](./code/MyTask.java)
-
-[MyThread.java](./code/MyThread.java)
+> 代码在 ./code 中
