@@ -786,9 +786,9 @@ input {
 }
 
 
-</style><title>index</title>
+</style><title>第2次作业19030100358吴起龙</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><p><span>2022-1-18</span></p><ul><li><a href='./gh-pages/nginx代理和负载均衡/index.html'><span>nginx代理和负载均衡</span></a></li><li><a href='./gh-pages/tank_vs/index.html'><span>网页版坦克大战（unfinished）</span></a></li><li><a href='./gh-pages/基于线程池的Server/index.html'><span>基于线程池的Server</span></a></li></ul><p>&nbsp;</p></div></div>
+<div id='write'  class=''><h1 id='第二次作业'><span>第二次作业</span></h1><h2 id='要求'><span>要求：</span></h2><p><img src="https://s2.loli.net/2022/03/22/ouV8XEStgw3rMdU.jpg" referrerpolicy="no-referrer" alt="要求"></p><p>&nbsp;</p><h3 id='循序渐进'><span>循序渐进</span></h3><hr /><p><span>不使用线程池的 Server ：</span></p><p><span>		</span><span>监听端口，建立监听 socket，每次有请求连接时，则从中取出并新建一个通信 socket，与客户端通过字符流通信。</span></p><p><span>		</span><strong><span>问题</span></strong><span>：因为每次新建通信 socket 时都会新建一个线程，大大增加了线程</span><strong><span>创建-销毁</span></strong><span>的开销。</span></p><p>&nbsp;</p><p><span>使用线程池的 Server：</span></p><p><span>		</span><span>在上面的基础上，建立一个线程池，因为线程池中有一些一直休眠的线程，所以产生连接请求时，可以大大减少线程创建-销毁的开销。</span></p><p><span>note：</span></p><ul><li><span>线程池中的任务必要实现 Runnable 接口</span></li><li><span>子线程需要继承 Thread 基类</span></li></ul><p>&nbsp;</p><p><span>大致流程：Server 中创建线程池，有连接请求时取出一个线程执行任务，任务内容就是服务该请求。</span></p><h3 id='运行结果'><span>运行结果</span></h3><p><img src="https://s2.loli.net/2022/03/22/8bGDCmWQSehPlsi.png" referrerpolicy="no-referrer" alt="image-20220322165328393"></p><p>&nbsp;</p><blockquote><p><span>代码如下</span></p></blockquote><p><a href='./code/Server.java'><span>Server.java</span></a></p><p><a href='./code/Client.java'><span>Client.java</span></a></p><p><a href='./code/MyTask.java'><span>MyTask.java</span></a></p><p><a href='./code/MyThread.java'><span>MyThread.java</span></a></p></div></div>
 </body>
 </html>
