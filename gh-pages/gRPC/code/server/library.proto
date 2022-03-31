@@ -1,0 +1,34 @@
+
+
+syntax = "proto3";
+
+package library;
+
+service lib {
+  rpc addBook (Book) returns (Boolean);
+  rpc queryById(BookId) returns (Book);
+  rpc queryByName(BookName) returns (BookList);
+  rpc deleteByBookId(BookId) returns (Boolean);
+}
+
+message BookName {
+  string name = 0;
+}
+
+message BookId {
+  int32 id = 0;
+}
+
+message Book {
+  int32 id = 0;
+  string name = 1;
+  string author = 2;
+}
+
+message BookList {
+  string books = 0;
+}
+
+message Boolean {
+  bool result = 0;
+}

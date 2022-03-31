@@ -2,9 +2,9 @@
  * 利用 gRPC 中间件搭建简易图书管理系统
  */
 
-const PROTO_PATH = __dirname + "/../library.proto";
+const PROTO_PATH = __dirname + "/library.proto";
 const { addBook, queryById, queryByName, deleteByBookId } = require("./lib");
-const IP = "localhost";
+const IP = "0.0.0.0";
 const PORT = 10029;
 
 const grpc = require("@grpc/grpc-js");
