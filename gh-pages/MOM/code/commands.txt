@@ -1,0 +1,15 @@
+mvn clean
+mvn compile
+/*向 Sign Topic 发送数据*/
+mvn exec:java -Dexec.mainClass="SignPublisher"
+
+/*接收 Sign Topic 中数据，并每一段时间发送数据到 Sign Queue 中*/
+mvn exec:java -Dexec.mainClass="SignAnalyze" -Dexec.args="10"
+
+/*接收 Sign Queue 中数据*/
+mvn exec:java -Dexec.mainClass="ASyncConsumer"
+
+
+
+
+
