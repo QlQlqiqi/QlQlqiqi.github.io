@@ -14,4 +14,4 @@
 
 
 
-[my_awesome_app](./gh-pages/verge3d/my_awesome_app/my_awesome_app.html)
+[my_awesome_app](./gh-pages/verge3d/my_awesome_app/index.html)
