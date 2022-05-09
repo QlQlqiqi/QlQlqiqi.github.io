@@ -1,0 +1,90 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="544" scrolly="347.99999999999994" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="887.397790975854" scrolly="799.71435546875" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="autoRotateCamera" id="|wHbE+sm/Nv-hY2,Dg#4" x="-750" y="-550">
+      <field name="ON_OFF">ON</field>
+      <value name="SPEED">
+        <shadow type="math_number" id="9^b_;/3*w#lh@DPA?Uqi">
+          <field name="NUM">2</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="addHTMLElement" id="NOv(#{(y*hA,:#hoj4w;" disabled="true" x="-770" y="-330">
+      <field name="ELEMENT">button</field>
+      <field name="MODE">TO</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="(x-fag=,*Ndg%]x%g~FS">
+          <field name="TEXT">unfold_button</field>
+        </shadow>
+      </value>
+      <value name="TARGET_ID">
+        <shadow type="DOMObjectSelector" id="*2W=WPEG/hibb{]~l};(">
+          <field name="DOM_OBJECT">CONTAINER</field>
+        </shadow>
+        <block type="querySelector" id="$A@XiqB1N1Vu={8:O,+$">
+          <value name="QUERY">
+            <shadow type="text" id="B:RF/`mJb19OyXWp||Ru">
+              <field name="TEXT">#v3d-container</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="setHTMLElemAttribute" id="ttL5As%XHRB4%vqCE{/b" disabled="true">
+          <field name="ATTRIBUTE">innerHTML</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <block type="querySelector" id="E=`JO`X@[VvX+p,EO#9%">
+              <value name="QUERY">
+                <shadow type="text" id="92w`aF7kO:OKHa^ABtb#">
+                  <field name="TEXT">#unfold_button</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="0Fu8o4fSHia`t/1wY9%v">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="text" id="68ejAsonMq`{L!0.p=h1">
+              <field name="TEXT">unfold</field>
+            </block>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Z*%kzK,|d[B1j%[K-$I~" disabled="true" x="-661" y="-239">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="I@=JL*lOF[3+AvmwsF9g">
+          <field name="TEXT">unfold_button</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="playAnimationAdv" id="3,QD!,QoGfVDP21ZsW^u">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">LoopOnce</field>
+          <value name="VALUE">
+            <shadow type="animationList" id=".,NWgcu_WfNr.Nm!*`Ht">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="getAnimations" id="eVoIap$/)0~?q_DOK-O$">
+              <value name="OBJECTINPUT">
+                <shadow type="objectList" id="[!ght%zlN4y|xOOh|%/#">
+                  <field name="FIELDNAME">awl</field>
+                </shadow>
+                <block type="groupList" id="PtsJfbOg]-p=wG4bfPuJ">
+                  <field name="FIELDNAME">animated_parts</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="859.8" viewport-y="28" viewport-w="585.2" viewport-h="386" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

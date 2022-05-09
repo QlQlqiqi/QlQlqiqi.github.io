@@ -1,0 +1,170 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="544" scrolly="347.99999999999994" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="956.1897564028118" scrolly="647.5108553598529" scale="0.8430191754225532">
+    <block xmlns="https://developers.google.com/blockly/xml" type="autoRotateCamera" id="|wHbE+sm/Nv-hY2,Dg#4" x="-950" y="-850">
+      <field name="ON_OFF">ON</field>
+      <value name="SPEED">
+        <shadow type="math_number" id="9^b_;/3*w#lh@DPA?Uqi">
+          <field name="NUM">2</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="addHTMLElement" id="NOv(#{(y*hA,:#hoj4w;" x="-970" y="-490">
+      <field name="ELEMENT">button</field>
+      <field name="MODE">TO</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="(x-fag=,*Ndg%]x%g~FS">
+          <field name="TEXT">unfold_button</field>
+        </shadow>
+      </value>
+      <value name="TARGET_ID">
+        <shadow type="DOMObjectSelector" id="*2W=WPEG/hibb{]~l};(">
+          <field name="DOM_OBJECT">CONTAINER</field>
+        </shadow>
+        <block type="querySelector" id="$A@XiqB1N1Vu={8:O,+$">
+          <value name="QUERY">
+            <shadow type="text" id="B:RF/`mJb19OyXWp||Ru">
+              <field name="TEXT">#v3d-container</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="setHTMLElemAttribute" id="ttL5As%XHRB4%vqCE{/b">
+          <field name="ATTRIBUTE">innerHTML</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <block type="text" id="68ejAsonMq`{L!0.p=h1">
+              <field name="TEXT">unfold</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="0Fu8o4fSHia`t/1wY9%v">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="querySelector" id="E=`JO`X@[VvX+p,EO#9%">
+              <value name="QUERY">
+                <shadow type="text" id="92w`aF7kO:OKHa^ABtb#">
+                  <field name="TEXT">#unfold_button</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="eventHTMLElem" id="Z*%kzK,|d[B1j%[K-$I~">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="I@=JL*lOF[3+AvmwsF9g">
+                  <field name="TEXT">unfold_button</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="playAnimationAdv" id="3,QD!,QoGfVDP21ZsW^u">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id=".,NWgcu_WfNr.Nm!*`Ht">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="getAnimations" id="eVoIap$/)0~?q_DOK-O$">
+                      <value name="OBJECTINPUT">
+                        <shadow type="objectList" id="[!ght%zlN4y|xOOh|%/#">
+                          <field name="FIELDNAME">awl</field>
+                        </shadow>
+                        <block type="groupList" id="PtsJfbOg]-p=wG4bfPuJ">
+                          <field name="FIELDNAME">animated_parts</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="addHTMLElement" id="h/!v3*#A;yscg3u;P`%9" x="-970" y="-270">
+      <field name="ELEMENT">button</field>
+      <field name="MODE">TO</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="tf?bP4)Os=GhO.MOs/S3">
+          <field name="TEXT">fold_button</field>
+        </shadow>
+      </value>
+      <value name="TARGET_ID">
+        <shadow type="DOMObjectSelector">
+          <field name="DOM_OBJECT">CONTAINER</field>
+        </shadow>
+        <block type="querySelector" id="ml@21_?{tq-Oa!xOQFCs">
+          <value name="QUERY">
+            <shadow type="text" id="xcJhWr:8Mq1HlF1rdFaB">
+              <field name="TEXT">#v3d-container</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="setHTMLElemAttribute" id="jj5bn6Yw%raB{rVs~8Hz">
+          <field name="ATTRIBUTE">innerHTML</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <block type="text" id="Z9el~[ACYvN{*m$`$tp:">
+              <field name="TEXT">fold</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="querySelector" id="Sco$1ZEb#~i/q6h%zM0)">
+              <value name="QUERY">
+                <shadow type="text" id="qJfD+-(oN)dIF}|g}V.T">
+                  <field name="TEXT">#fold_button</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="eventHTMLElem" id="Mma6i(:GkJ%Op9?C;vzd">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="i9Q)50@cSQY|;uflA9.Q">
+                  <field name="TEXT">fold_button</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="playAnimationAdv" id="fg}#oxld}StyrXA3p}$b">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="false"></mutation>
+                  <field name="REVERSED">TRUE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="getAnimations" id="ybZU/DR%pZALId-bB,,u">
+                      <value name="OBJECTINPUT">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">awl</field>
+                        </shadow>
+                        <block type="groupList" id="ZFzT8_k7O}gFTQApDgb[">
+                          <field name="FIELDNAME">animated_parts</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="883.2285278320312" viewport-y="29.142852783203125" viewport-w="570.911" viewport-h="311.143" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

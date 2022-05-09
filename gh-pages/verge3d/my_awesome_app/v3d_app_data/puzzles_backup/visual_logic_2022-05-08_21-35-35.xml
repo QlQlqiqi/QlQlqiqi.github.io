@@ -1,0 +1,74 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="544" scrolly="347.99999999999994" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="724.5404606535884" scrolly="756.2858276367188" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setTimer" id="6,NL3-e[3Te?[`#v:V9*" x="-610" y="-630">
+      <value name="ID">
+        <shadow type="text" id="c*FfK3JxIrpg^L5SK}2N">
+          <field name="TEXT">myTimer</field>
+        </shadow>
+      </value>
+      <value name="VALUE">
+        <shadow type="math_number" id="oH@V7?s_DKk2x?//oAS?">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <value name="REPEAT">
+        <shadow type="math_number" id="2QGX7IB(@Oxj)Fp3y4+|">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="autoRotateCamera" id="wOY0EJ.xBF:B)WmIgWDu">
+          <field name="ON_OFF">ON</field>
+          <value name="SPEED">
+            <shadow type="math_number" id="(0E/t87,@qe~y(WM@BT:">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="whenClicked" id="DJYXUJTM0W%nFVZ=0^jw">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id=")-a2,1xa%%=YBdf7?AXg">
+              <field name="FIELDNAME">scissors_secondary</field>
+            </shadow>
+            <block type="allObjectList" id="K1ZAV*cY(:zyuQkUy#nc"/>
+          </value>
+          <statement name="DO">
+            <block type="autoRotateCamera" id="!#b7gBg99~D,PV86J$8y">
+              <field name="ON_OFF">OFF</field>
+              <value name="SPEED">
+                <shadow type="math_number" id="L,Ls.P]j_~][f-Y@ZIj]">
+                  <field name="NUM">2</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="addHTMLElement" id="I`,[3KsI18:}s26~_g,L" x="-630" y="-330">
+      <field name="ELEMENT">button</field>
+      <field name="MODE">TO</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="iOQ?5MYUSN3Oik(,]v)~">
+          <field name="TEXT">unfold_button</field>
+        </shadow>
+      </value>
+      <value name="TARGET_ID">
+        <shadow type="DOMObjectSelector" id="Y?xZuIf;lLe%w6.w+x@H">
+          <field name="DOM_OBJECT">BODY</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="859.8" viewport-y="28" viewport-w="585.2" viewport-h="386" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
