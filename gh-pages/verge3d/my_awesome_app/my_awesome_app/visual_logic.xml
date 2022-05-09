@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="544" scrolly="347.99999999999994" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="967.0561416774008" scrolly="267.8428833007812" scale="0.9000000000000001">
+  <tab name="main" type="MainTab" active="true" scrollx="935.6275222926351" scrolly="-71.01444702148444" scale="0.9000000000000001">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="Sd2nmw(R^xe}PkF/LhG{" type="">unfolded_knife</variable>
     </variables>
@@ -338,6 +338,25 @@
                       <field name="BOOL">TRUE</field>
                     </block>
                   </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="4P=*kO-$#=z*/Sw,+QO*">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="Xhgm-T%|/4g^}sY}]t$#">
+                          <field name="TEXT">block</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text">
+                          <field name="TEXT"/>
+                        </shadow>
+                        <block type="text" id="#EH2i:OH?BmjE}Tr1765">
+                          <field name="TEXT">an_1</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
                 </block>
               </statement>
             </block>
@@ -355,7 +374,7 @@
             <block type="querySelector" id="d.X`r.Am%|i(fJu3.h2d">
               <value name="QUERY">
                 <shadow type="text" id="MR#|ZrS3*aAr1fN^X;iB">
-                  <field name="TEXT">#unfold-button-ext</field>
+                  <field name="TEXT">#fold-button-ext</field>
                 </shadow>
               </value>
             </block>
@@ -378,35 +397,54 @@
                 </block>
               </value>
               <statement name="DO0">
-                <block type="playAnimationAdv" id="0G]EInVZ|upAdQDAu2l^">
-                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="true"></mutation>
-                  <field name="REVERSED">TRUE</field>
-                  <field name="LOOP">LoopOnce</field>
+                <block type="setHTMLElemStyle" id="?gXV,}SR6HMA#w`g$]qj">
+                  <field name="PROPERTY">display</field>
+                  <field name="PARENT">FALSE</field>
                   <value name="VALUE">
-                    <shadow type="animationList">
-                      <field name="FIELDNAME">&lt;none&gt;</field>
-                    </shadow>
-                    <block type="getAnimations" id="))x#A2i-#ty@l]+x-kPJ">
-                      <value name="OBJECTINPUT">
-                        <shadow type="objectList">
-                          <field name="FIELDNAME">awl</field>
-                        </shadow>
-                        <block type="groupList" id="g.Ii-47Xq90SSe23lYy4">
-                          <field name="FIELDNAME">animated_parts</field>
-                        </block>
-                      </value>
+                    <block type="text" id="u%{Q`$sR??Eu1dsb#%_-">
+                      <field name="TEXT">none</field>
                     </block>
                   </value>
-                  <statement name="DO">
-                    <block type="variables_set" id="##vNSi(IB?F;wJZP?Q]E">
-                      <field name="VAR" id="Sd2nmw(R^xe}PkF/LhG{">unfolded_knife</field>
+                  <value name="ID">
+                    <shadow type="text">
+                      <field name="TEXT"/>
+                    </shadow>
+                    <block type="text" id="}z5;gYd4*n:MSj_7I@T`">
+                      <field name="TEXT">an_1</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="playAnimationAdv" id="0G]EInVZ|upAdQDAu2l^">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="true"></mutation>
+                      <field name="REVERSED">TRUE</field>
+                      <field name="LOOP">LoopOnce</field>
                       <value name="VALUE">
-                        <block type="logic_boolean" id="l1psYe~TK0`vpjVvK1q;">
-                          <field name="BOOL">FALSE</field>
+                        <shadow type="animationList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="getAnimations" id="))x#A2i-#ty@l]+x-kPJ">
+                          <value name="OBJECTINPUT">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">awl</field>
+                            </shadow>
+                            <block type="groupList" id="g.Ii-47Xq90SSe23lYy4">
+                              <field name="FIELDNAME">animated_parts</field>
+                            </block>
+                          </value>
                         </block>
                       </value>
+                      <statement name="DO">
+                        <block type="variables_set" id="##vNSi(IB?F;wJZP?Q]E">
+                          <field name="VAR" id="Sd2nmw(R^xe}PkF/LhG{">unfolded_knife</field>
+                          <value name="VALUE">
+                            <block type="logic_boolean" id="l1psYe~TK0`vpjVvK1q;">
+                              <field name="BOOL">FALSE</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
                     </block>
-                  </statement>
+                  </next>
                 </block>
               </statement>
             </block>
